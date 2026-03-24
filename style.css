@@ -1,0 +1,94 @@
+/* ===== CONFIGURAÇÃO GERAL ===== */
+body {
+    font-family: Arial, sans-serif; /* fonte padrão */
+    background-color: #111; /* fundo preto */
+    color: #fff; /* texto branco */
+    margin: 0; /* remove margens padrão */
+}
+
+
+/* ===== TÍTULO ===== */
+h1 {
+    background-color: #000; /* fundo preto */
+    color: #fff; /* texto branco */
+    padding: 10px; /* espaço interno */
+    border-bottom: 2px solid #fff; /* linha branca embaixo */
+}
+
+
+/* ===== CAIXA CENTRAL ===== */
+center {
+    background-color: #1a1a1a; /* cinza escuro */
+    margin: 40px auto; /* centraliza e dá espaço */
+    padding: 20px; /* espaço interno */
+    width: 320px; /* largura */
+    border-radius: 10px; /* bordas arredondadas */
+    border: 1px solid #fff; /* borda branca */
+}
+
+
+/* ===== INPUT ===== */
+input[type="text"] {
+    padding: 8px; /* espaço interno */
+    font-size: 16px; /* tamanho da fonte */
+    border-radius: 5px; /* borda arredondada */
+    border: 1px solid #fff; /* borda branca */
+    width: 80%; /* largura */
+    background-color: #000; /* fundo preto */
+    color: #fff; /* texto branco */
+    margin-bottom: 10px; /* espaço abaixo */
+}
+
+
+/* ===== RADIO BUTTONS ===== */
+input[type="radio"] {
+    margin: 5px; /* espaço ao redor */
+    cursor: pointer; /* cursor de clique */
+}
+
+/* texto dos radios */
+label {
+    display: inline-block; /* organiza melhor */
+    margin: 5px; /* espaço entre opções */
+    cursor: pointer; /* permite clicar no texto */
+}
+
+
+/* ===== BOTÃO ===== */
+button {
+    margin-top: 10px; /* espaço acima */
+    padding: 10px; /* espaço interno */
+    width: 160px; /* largura */
+    font-size: 16px; /* tamanho da fonte */
+    background-color: #fff; /* fundo branco */
+    color: #000; /* texto preto */
+    border: none; /* remove borda padrão */
+    border-radius: 5px; /* borda arredondada */
+    cursor: pointer; /* cursor de clique */
+    font-weight: bold; /* texto em destaque */
+}
+
+
+/* efeito ao passar o mouse */
+button:hover {
+    background-color: #ccc; /* cinza claro */
+}
+
+
+/* ===== RESULTADOS ===== */
+#decimal, #octal, #hexadecimal, #binario {
+    background-color: #000; /* fundo preto */
+    padding: 8px; /* espaço interno */
+    margin: 8px auto; /* espaço entre elementos */
+    width: 140px; /* largura */
+    border-radius: 5px; /* borda arredondada */
+    border: 1px solid #fff; /* borda branca */
+    font-weight: bold; /* texto forte */
+}
+
+
+/* ===== TEXTOS ===== */
+p {
+    margin-top: 10px; /* espaço acima */
+    margin-bottom: 5px; /* espaço abaixo */
+}

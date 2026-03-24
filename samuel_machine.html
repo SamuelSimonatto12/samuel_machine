@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Bases</title>
+
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>Samuel Machine</h1>
+
+        <h3>Digite um número:</h3>
+        <input id="ipt_decimal" placeholder="Digite aqui">
+
+       
+        <p>Escolha a base:</p>
+
+        
+        <label><input type="radio" id="base2" name="base"> Binário</label>
+        <label><input type="radio" id="base8" name="base"> Octal</label>
+        <label><input type="radio" id="base10" name="base" checked> Decimal</label>
+        <label><input type="radio" id="base16" name="base"> Hexadecimal</label>
+
+        <br><br>
+
+       1
+        <button onclick="converter()">Converter</button>
+
+
+        <p>Decimal:</p>
+        <div id="decimal"></div>
+
+        <p>Octal:</p>
+        <div id="octal"></div>
+
+        <p>Hexadecimal:</p>
+        <div id="hexadecimal"></div>
+
+        <p>Binário:</p>
+        <div id="binario"></div>
+
+    </center>
+
+    <script>
+
+        // função que executa ao clicar no botão
+        function converter() {
+
+            // pega o valor digitado
+            var valor = ipt_decimal.value;
+
+            // variável que vai guardar a base escolhida
+            var base;
+
+            // verifica qual radio está selecionado
+            if (base2.checked) {
+                base = 2; // binário
+            } else if (base8.checked) {
+                base = 8; // octal
+            } else if (base10.checked) {
+                base = 10; // decimal
+            } else if (base16.checked) {
+                base = 16; // hexadecimal
+            } else {
+                // caso nenhuma base esteja selecionada
+                alert("Escolha uma base!");
+                return;
+            }
+
+            // converte o valor digitado para decimal
+            var valorDecimal = parseInt(valor, base);
+
+            // verifica se a conversão deu erro
+            if (isNaN(valorDecimal)) {
+                alert("Valor inválido!");
+                return;
+            }
+
+            // mostra o valor em decimal
+            decimal.innerHTML = valorDecimal;
+
+            // converte e mostra em outras bases
+            octal.innerHTML = valorDecimal.toString(8);
+            hexadecimal.innerHTML = valorDecimal.toString(16).toUpperCase();
+            binario.innerHTML = valorDecimal.toString(2);
+        }
+
+    </script>
+</body>
+
+</html>
